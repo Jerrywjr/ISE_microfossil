@@ -64,6 +64,9 @@
         <mxCell id="i-QiWfTKpj357xql2Zek-15" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="[S310] 外循环结束: 从S个剪枝树中选出平均同意度最高的树作为最终的可解释模型输出" vertex="1">
           <mxGeometry height="60" width="240.5" x="479.75" y="130" as="geometry" />
         </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-16" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
+          <mxGeometry height="660" width="690" x="80" y="80" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
