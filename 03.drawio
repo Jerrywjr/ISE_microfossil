@@ -1,11 +1,68 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="946" dy="732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="901" dy="697" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="G_yK6qCyGO6Euen8nRh4-0" parent="WIyWlLk6GJQsqaUBKTNV-1" style="shape=datastore;whiteSpace=wrap;html=1;" value="[S301] 初始化最优预测数据集 D" vertex="1">
           <mxGeometry height="80" width="100" x="200" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-1" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="196" as="sourcePoint" />
+            <mxPoint x="250" y="256" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-2" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="[S302] 启动外循环: i = 1 到 S" vertex="1">
+          <mxGeometry height="60" width="170" x="165" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-3" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="330" as="sourcePoint" />
+            <mxPoint x="250" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-4" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;（内循环）&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;[S304] 从 D 中均匀采样 M 个样本，创建 D&#39; 并划分为 D&#39;_train 和 D&#39;_test&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[S305] 使用 D&#39;_train 训练候选决策树 π̂_j&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[S306] 用 D&#39;_test 测试 π̂_j，收集错误样本 D&#39;_e, 交由黑盒模型生成纠正数据 D_j&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;[S307] 将纠正数据 D_j 合并回全局数据集 D&lt;/div&gt;" vertex="1">
+          <mxGeometry height="286" width="235" x="132.5" y="414" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-5" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;div&gt;[S303] 启动内循环: j = 1 到 N&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="30" width="180" x="160" y="393" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-6" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[内循环 j++ 直至 j=N]" vertex="1">
+          <mxGeometry height="30" width="180" x="335" y="670" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-7" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="685" />
+            </Array>
+            <mxPoint x="500" y="684.5" as="sourcePoint" />
+            <mxPoint x="600" y="580" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-9" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=0;whiteSpace=wrap;html=1;" value="[S308] 内循环结束: 从N个候选树中选出保真度最高的树 π̂_max" vertex="1">
+          <mxGeometry height="60" width="190" x="490" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-10" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rhombus;whiteSpace=wrap;html=1;" value="[S309] 对 π̂_max&amp;nbsp;&lt;div&gt;进行 Top-k 剪枝，&lt;/div&gt;&lt;div&gt;得到剪枝后树 π̂_i&lt;/div&gt;" vertex="1">
+          <mxGeometry height="148" width="160" x="520" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-12" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600" y="500" as="sourcePoint" />
+            <mxPoint x="600" y="450" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-13" parent="WIyWlLk6GJQsqaUBKTNV-1" style="text;whiteSpace=wrap;" value="[外循环 i++ 直至 i=S]" vertex="1">
+          <mxGeometry height="40" width="140" x="440" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-14" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="599.5" y="260" as="sourcePoint" />
+            <mxPoint x="600" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i-QiWfTKpj357xql2Zek-15" parent="WIyWlLk6GJQsqaUBKTNV-1" style="rounded=1;whiteSpace=wrap;html=1;" value="[S310] 外循环结束: 从S个剪枝树中选出平均同意度最高的树作为最终的可解释模型输出" vertex="1">
+          <mxGeometry height="60" width="240.5" x="479.75" y="130" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
