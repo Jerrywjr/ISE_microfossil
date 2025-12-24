@@ -1,50 +1,89 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="OQxQ3JsWlOH-0AQsxlG0">
-    <mxGraphModel dx="946" dy="732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1183" dy="915" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="[S401] 输入:&amp;nbsp;&lt;div&gt;高保真代理决策树&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="190" x="330" y="320" as="geometry" />
+          <mxGeometry height="60" width="190" x="330" y="300" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="[S402] 遍历决策树，&lt;div&gt;提取所有决策路径规则&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="170" x="340" y="420" as="geometry" />
+          <mxGeometry height="60" width="170" x="340" y="410" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-3" parent="1" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" value="[S403] 计算每条规则的关键指标&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(深度、覆盖率、置信度)&lt;/span&gt;&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="210" x="320" y="530" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-4" parent="1" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" value="&lt;div&gt;[S404] 初步筛选: 规则深度 ≤ D1 且 覆盖率 ≥ C1?&lt;/div&gt;&lt;div&gt;(D1, C1 为预设阈值)&lt;/div&gt;" vertex="1">
-          <mxGeometry height="170" width="240" x="305" y="630" as="geometry" />
+          <mxGeometry height="170" width="240" x="305" y="650" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="370" y="760" as="sourcePoint" />
-            <mxPoint x="370" y="870" as="targetPoint" />
+            <mxPoint x="470" y="820" as="sourcePoint" />
+            <mxPoint x="470" y="880" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="否" vertex="1">
-          <mxGeometry height="30" width="60" x="390" y="830" as="geometry" />
+          <mxGeometry height="30" width="60" x="485" y="840" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-8" parent="1" style="ellipse;whiteSpace=wrap;html=1;" value="[丢弃/归档规则]" vertex="1">
-          <mxGeometry height="80" width="120" x="340" y="870" as="geometry" />
+          <mxGeometry height="80" width="120" x="440" y="880" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="是" vertex="1">
-          <mxGeometry height="30" width="60" x="570" y="730" as="geometry" />
+          <mxGeometry height="30" width="60" x="590" y="730" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-10" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="460" y="760" as="sourcePoint" />
+            <mxPoint x="550" y="760" as="sourcePoint" />
             <mxPoint x="690" y="760" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[标记为&quot;可疑捷径规则&quot;]" vertex="1">
-          <mxGeometry height="30" width="145" x="560" y="780" as="geometry" />
+          <mxGeometry height="30" width="145" x="550" y="770" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;[S405] 域知识辅助的语义分析:&lt;/div&gt;&lt;div&gt;- 规则依赖的特征是否与任务语义相关？&lt;/div&gt;&lt;div&gt;- 特征是否可能为数据集特有伪相关？&lt;/div&gt;" vertex="1">
-          <mxGeometry height="110" width="240" x="705" y="680" as="geometry" />
+          <mxGeometry height="110" width="240" x="705" y="700" as="geometry" />
         </mxCell>
         <mxCell id="OwGxUbEGvSJ9hv0ctfqB-14" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="&lt;div&gt;[S406] (可选)规则鲁棒性验证:&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- 对规则关键特征施加扰动&lt;/div&gt;&lt;div&gt;- 观察黑盒模型预测是否剧烈变化&lt;/div&gt;" vertex="1">
           <mxGeometry height="190" width="190" x="730" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-17" parent="1" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;" value="[S407] 生成并输出&quot;潜在捷径规则列表&quot;检测报告" vertex="1">
+          <mxGeometry height="100" width="150" x="750" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-18" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="610" y="640" as="sourcePoint" />
+            <mxPoint x="610" y="680" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-20" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="827" y="453" as="sourcePoint" />
+            <mxPoint x="827" y="413" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-21" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="828" y="692" as="sourcePoint" />
+            <mxPoint x="828" y="652" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-22" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="600" as="sourcePoint" />
+            <mxPoint x="420" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-23" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="420" y="480" as="sourcePoint" />
+            <mxPoint x="420" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="OwGxUbEGvSJ9hv0ctfqB-24" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="418" y="367" as="sourcePoint" />
+            <mxPoint x="418" y="407" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
