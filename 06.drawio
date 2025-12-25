@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.2.9">
   <diagram name="Page-1" id="C70WgCVX7cSAdKuD4m70">
-    <mxGraphModel dx="946" dy="732" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="701" dy="399" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -34,7 +34,7 @@
         <mxCell id="REnx5cPRYpAVHAv6_DDe-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="[区域603] 归纳偏差检测摘要" vertex="1">
           <mxGeometry height="30" width="180" x="520" y="140" as="geometry" />
         </mxCell>
-        <mxCell id="REnx5cPRYpAVHAv6_DDe-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;⚠️ 捷径学习检测: 发现&lt;/div&gt;&lt;div&gt;规则: IF (B49&amp;lt;=17)...&lt;/div&gt;&lt;div&gt;风险: 高&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;❓ 伪相关性检测: 可能&lt;/div&gt;&lt;div&gt;特征: B49, B43&lt;/div&gt;&lt;div&gt;理由: 语义不符&lt;/div&gt;" vertex="1">
+        <mxCell id="REnx5cPRYpAVHAv6_DDe-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;捷径学习检测: 发现&lt;/div&gt;&lt;div&gt;规则: IF (B49&amp;lt;=17)...&lt;/div&gt;&lt;div&gt;风险: 高&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;伪相关性检测: 可能&lt;/div&gt;&lt;div&gt;特征: B49, B43&lt;/div&gt;&lt;div&gt;理由: 语义不符&lt;/div&gt;" vertex="1">
           <mxGeometry height="230" width="260" x="480" y="120" as="geometry" />
         </mxCell>
         <mxCell id="REnx5cPRYpAVHAv6_DDe-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" value="" vertex="1">
